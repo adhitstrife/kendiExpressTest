@@ -1,0 +1,144 @@
+<div class="menu text-center">
+    <div class="title-sm text-lg font-semibold">
+        Cara Kerja Kami
+    </div>
+    <div class="title-lg text-xl text-red-700 font-bold mt-4">
+        Untukmu yang terbaik
+    </div>
+    <div class="content-menu relative p-2 md:hidden">
+        <ngx-slick-carousel class="carousel" 
+            #slickModal="slick-carousel" 
+            [config]="slideConfig" 
+            (init)="slickInit($event)"
+            (breakpoint)="breakpoint($event)"
+            (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem  class="item">
+                <div class="icon flex justify-center mt-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <div class="title-bold mt-8 text-lg font-bold">
+                        Tentukan Lokasi
+                    </div>
+                    <div class="subtitle mt-4">
+                        Tentukan alamat pengiriman mu
+                    </div>
+                </div>
+            </div>
+            <div ngxSlickItem  class="item">
+                <div class="icon flex justify-center mt-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <div class="title-bold mt-8 text-lg font-bold">
+                        Pilih makanan
+                    </div>
+                    <div class="subtitle mt-4">
+                        Tentukan alamat pengiriman mu
+                    </div>
+                </div>
+            </div>
+            <div ngxSlickItem  class="item">
+                <div class="icon flex justify-center mt-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <div class="text">
+                    <div class="title-bold mt-8 text-lg font-bold">
+                        Selamat Menikmati
+                    </div>
+                    <div class="subtitle mt-4">
+                        Tentukan alamat pengiriman mu
+                    </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+        <div class="button w-full flex justify-between  absolute top-1/2">
+            <button (click)="slickModal.slickPrev()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button (click)="slickModal.slickNext()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+            </button>
+        </div>
+    </div>
+    <div class="content-menu-md p-2 hidden md:flex">
+        <div class="item md:w-1/4">
+            <div class="icon flex justify-center mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div class="text">
+                <div class="title-bold mt-8 text-lg font-bold">
+                    Tentukan Lokasi
+                </div>
+                <div class="subtitle mt-4">
+                    Tentukan alamat pengiriman mu
+                </div>
+            </div>
+        </div>
+        <div class="item md:w-1/4">
+            <div class="icon flex justify-center mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div class="text">
+                <div class="title-bold mt-8 text-lg font-bold">
+                    Pilih menu
+                </div>
+                <div class="subtitle mt-4">
+                    Tentukan alamat pengiriman mu
+                </div>
+            </div>
+        </div>
+        <div class="item md:w-1/4">
+            <div class="icon flex justify-center mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div class="text">
+                <div class="title-bold mt-8 text-lg font-bold">
+                    Pembayaran
+                </div>
+                <div class="subtitle mt-4">
+                    Tentukan alamat pengiriman mu
+                </div>
+            </div>
+        </div>
+        <div class="item md:w-1/4">
+            <div class="icon flex justify-center mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+            <div class="text">
+                <div class="title-bold mt-8 text-lg font-bold">
+                    Pengiriman
+                </div>
+                <div class="subtitle mt-4">
+                    Tentukan alamat pengiriman mu
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="menu w-full text-center">
+    <div class="title-sm text-lg font-semibold">
+        Tentang Kami
+    </div>
+    <div class="title-lg text-xl text-red-700 font-bold mt-4">
+        Kata Mereka Yang Tercinta
+    </div>
+    <div class="content-menu md:flex md:justify-center">
+        <div class="icon flex justify-center md:item-start mt-2 md:mt-0 text-9xl h-20">
+            "
+        </div>
+        <div class="text">
+            <div class="title-bold mt-0 md:hidden">
+                {{ testimony.comment }}
+            </div>
+            <div class="user md:flex md:items-end">
+                <div class="picture flex justify-center mt-4">
+                    <img src="{{ testimony.avatar }}" alt="" srcset="">
+                </div>
+                <div class="name-job md:px-4 md:text-left">
+                    <div class="title-bold mt-8 hidden md:block">
+                        {{ testimony.comment }}
+                    </div>
+                    <div class="name font-semibold text-lg mt-4">
+                        {{ testimony.name }}
+                    </div>
+                    <div class="position">
+                        {{ testimony.job }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
